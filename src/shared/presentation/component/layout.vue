@@ -1,13 +1,11 @@
-<script>
-export default {
-  name: "layout"
-}
+<script setup>
+import AppTolbar from "./toolbar.vue"
 </script>
 
 <template>
+  <app-tolbar />
 
+  <main>
+    <router-view />
+  </main>
 </template>
-
-<style scoped>
-
-</style>
