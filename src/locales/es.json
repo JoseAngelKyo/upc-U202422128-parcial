@@ -1,0 +1,21 @@
+{
+  "option": {
+    "home": "Inicio",
+    "new-telemetry": "Nueva Telemetría"
+  },
+  "toolbar": {
+    "company-name": "Geomine Gestión de Maquinaria y Telemetría",
+    "logo-alt": "GeoMine logo",
+    "navigation": "Mis Inspecciones",
+    "language-selector": "Seleccionar idioma"
+  },
+  "home": {
+    "title": "Inicio",
+    "content": "La Mejor Supervisión en el Mundo."
+  },
+  "page-not-found": {
+    "title": "Página No Encontrada",
+    "content": "La ruta {unavailable-route} no fue encontrada.",
+    "go-home": "Ir a la Página Principal"
+  }
+}

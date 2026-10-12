@@ -1,0 +1,21 @@
+{
+  "option": {
+    "home": "Home",
+    "new-telemetry": "New Telemetry"
+  },
+  "toolbar": {
+    "company-name": "Geomine Machinery & Telemetry Management",
+    "logo-alt": "GeoMine logo",
+    "navigation": "My Inpections",
+    "language-selector": "Select language"
+  },
+  "home": {
+    "title": "Home",
+    "content": "The Best Supervision on the world.”"
+  },
+  "page-not-found": {
+    "title": "Page Not Found",
+    "content": "The path {unavailable-route} was not found.",
+    "go-home": "Go Home"
+  }
+}
