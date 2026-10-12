@@ -12,7 +12,7 @@ const { t } = useI18n();
     <pv-toolbar>
       <template #start>
         <div class="flex align-items-center gap-2">
-          <img src="./Img/hussmann-logo.png" :alt="t('toolbar.logo-alt')" class="company-logo"/>
+          <img src="https://img.logo.dev/geomine.fr?token=pk_H-D5rqJGRtCnUq76HmOlCg&format=webp&retina=true" :alt="t('toolbar.logo-alt')" class="company-logo"/>
           <span class="font-bold">{{ t('toolbar.company-name') }}</span>
         </div>
       </template>
