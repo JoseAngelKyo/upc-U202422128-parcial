@@ -1,16 +1,30 @@
-import { createApp } from 'vue'
-import PrimeVue from 'primevue/config'
-import Material from "@primeuix/themes/material"
+import { createApp, watch } from 'vue';
+import PrimeVue from 'primevue/config';
+import Material from '@primeuix/themes/material';
 
-import './style.css'
-import App from './App.vue'
-import i18n from 'vue-i18n'
-import pinia from "pinia";
-import router from './router'
+import 'primeflex/primeflex.css';
+import 'primeicons/primeicons.css';
+import './style.css';
 
+import App from './App.vue';
+import pinia from './pinia.js';
+import i18n from './i18n.js';
+import router from './router.js';
 
-createApp(App).
-    use(i18n)
+watch(i18n.global.locale, locale => {
+    document.documentElement.lang = locale;
+}, { immediate: true });
+
+createApp(App)
+    .use(PrimeVue, {
+        theme: {
+            preset: Material,
+            options: {
+                darkModeSelector: false
+            }
+        }
+    })
     .use(pinia)
+    .use(i18n)
     .use(router)
-    .mount('#app')
+    .mount('#app');
