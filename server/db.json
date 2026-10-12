@@ -1,0 +1,12 @@
+{
+    "inspection-record": [
+        { "id": 1, "name": "Puchuncaví Pit - Bench 1" },
+        { "id": 2, "name": "Puchuncaví Pit - Bench 2" },
+        { "id": 3, "name": "Puchuncaví Pit - Bench 3" },
+        { "id": 4, "name": "Puchuncaví Pit - Bench 4" },
+        { "id": 5, "name": "Puchuncaví Pit - Bench 5" }
+    ], "telemetry-readings": [
+        { "id": 10, "name": "Puchuncaví Pit - Bench 3" },
+        { "id": 20, "name": "Sur-Este Underground Shaft 4" }
+    ]
+}
