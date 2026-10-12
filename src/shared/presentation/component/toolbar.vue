@@ -22,8 +22,8 @@ const { t } = useI18n();
           <router-link to="/home">
             {{ t('option.home') }}
           </router-link>
-          <router-link to="/assets/equipment/assignments/new">
-            {{ t('option.new-equipment-asset-assignment') }}
+          <router-link to="/telemetry/items/new">
+            {{ t('option.new-telemetry') }}
           </router-link>
         </nav>
       </template>
