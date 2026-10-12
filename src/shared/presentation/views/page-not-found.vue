@@ -1,17 +1,22 @@
 <script setup>
-import { useI18n } from 'vue-i18n';
-import { useRoute, useRouter } from 'vue-router';
-import PvButton from 'primevue/button';
+import { useRoute } from "vue-router";
+import { useI18n } from "vue-i18n";
 
-const { t } = useI18n();
 const route = useRoute();
-const router = useRouter();
+const unavailableRoute = route.path;
+const { t } = useI18n();
 </script>
 
 <template>
-  <section class="p-4" aria-labelledby="not-found-title">
-    <h1 id="not-found-title"> {{ t('page-not-found.title') }} </h1>
-    <p>{{t('page-not-found.content', {'unavailable-route': route.path}) }}</p>
-    <pv-button :label="t('page-not-found.go-home')" icon="pi pi-home" @click="router.push('/home')"/>
+  <section class="pt-6 p-4 md:p-5">
+    <div class="flex flex-column gap-3">
+      <h1 class="text-4xl font-bold text-color">{{ t('page-not-found.title') }}</h1>
+      <p class="m-0 line-height-3 text-color-secondary">
+        {{ t('page-not-found.content', { 'unavailable-route': unavailableRoute }) }}
+      </p>
+      <router-link to="/home" class="text-primary font-medium">
+        {{ t('page-not-found.go-home') }}
+      </router-link>
+    </div>
   </section>
 </template>

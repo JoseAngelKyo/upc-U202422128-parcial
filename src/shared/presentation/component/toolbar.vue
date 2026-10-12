@@ -2,7 +2,7 @@
 
 import { useI18n } from 'vue-i18n';
 import PvToolbar from 'primevue/toolbar';
-import LanguageSwitcher from '../component/languaje-switcher.vue';
+import LanguageSwitcher from '../component/language-switcher.vue';
 const { t } = useI18n();
 
 </script>
@@ -22,7 +22,7 @@ const { t } = useI18n();
           <router-link to="/home">
             {{ t('option.home') }}
           </router-link>
-          <router-link to="/telemetry/items/new">
+          <router-link to="/assets/equipment/assignments/new">
             {{ t('option.new-telemetry') }}
           </router-link>
         </nav>
