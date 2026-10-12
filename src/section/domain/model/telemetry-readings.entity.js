@@ -1,7 +1,7 @@
-export class TELEMETRYReadings {
+export class TelemetryReadings {
 
     constructor({id=null, machineryCode="", engineTemperatureC="", oilPressurePsi="", vibrationMmS="", alertTriggered="",
-                    registeredAt=""}) {
+                    registeredAt=""} = {}) {
         this.id = id;
         this.machineryCode = machineryCode;
         this.engineTemperatureC = engineTemperatureC;
